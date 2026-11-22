@@ -34,6 +34,14 @@ Every constant carries a source comment. A change that breaks a test must explai
 
 ---
 
+## Journal
+
+[`journal/`](journal/) — vintage-by-vintage logs. What actually happened at the carboy: lab readings, corrections, bench trial results, tasting notes, lessons. Organized by year.
+
+The guide is built from what the journal teaches.
+
+---
+
 ## Refinery Co
 
 Part of the **[Refinery Co](https://github.com/refinery-co)** brand family.
