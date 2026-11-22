@@ -1,35 +1,30 @@
 # Refinery Row
 
-Small-batch wine and mead made in Rodeo, California, under the name Refinery Row Wines.
+A home winemaker's guide — built from small-batch production in Rodeo, California.
 
-The same waterfront strip of Contra Costa County that defined Rodeo for over a century — crude in, product out — is now a renewable energy plant. The wine is made in the town that grew up around it. Same streets. New vintages.
+Every section traces back to a source: a lab instrument reading, a published formula, a masterclass reference. Where something is inferred it's labeled as such. Where the science conflicted with what actually happened at the carboy, both are recorded.
 
----
-
-## 2026 Vintage
-
-| Carboy | Varietal | Source | Status |
-|---|---|---|---|
-| RR-2026-CAB-01 | Cabernet Sauvignon | Suisun Valley | MLF complete — not yet racked or oaked |
-| RR-2026-SAN-01 | Sangiovese | Tehama County | MLF complete — SO2 and acetaldehyde work pending |
-
-Both wines finished MLF by October 2026. See [`OPEN-ITEMS.md`](OPEN-ITEMS.md) for current state and next steps.
+**Same streets. New vintages.**
 
 ---
 
-## What's Here
+## Guide
 
-| Folder | Contents |
+| Section | What's inside |
 |---|---|
-| [`formulas/`](formulas/) | Every calculation used on the 2026 vintage — acid, SO2, ABV, chaptalization — with sources and a Python implementation |
-| [`history/`](history/) | Vintage notebooks, MLF outcome, acid and correction notes, masterclass reference figures |
-| [`OPEN-ITEMS.md`](OPEN-ITEMS.md) | Current wine state, overdue work, next steps in order |
+| [`guide/grapes/`](guide/grapes/) | Sourcing, lot sheets, Brix/pH/TA at purchase, what to watch for before you buy |
+| [`guide/fermentation/`](guide/fermentation/) | Primary fermentation — yeast selection, nutrient timing, chaptalization, gravity tracking |
+| [`guide/fermentation/mlf.md`](guide/fermentation/mlf.md) | Malolactic fermentation — strain selection, inoculation, malic monitoring, completion threshold |
+| [`guide/corrections/`](guide/corrections/) | Acid additions, deacidification, pH vs TA decisions, bench trial method |
+| [`guide/measurements/`](guide/measurements/) | SO2 (free and molecular), TA, malic, pH — instruments, procedures, what the numbers mean |
+| [`guide/oak-aging/`](guide/oak-aging/) | Oak format and dose, timing, what to expect by variety |
+| [`guide/mead/`](guide/mead/) | Honey selection, nutrient protocol (TOSNA), stabilization, back-sweetening |
 
 ---
 
-## The Calculation Library
+## Formulas
 
-`formulas/refinery_calcs.py` is a clean Python implementation of every formula with tests that reproduce logged 2026 values. Run the tests:
+[`formulas/`](formulas/) — every calculation used in production, with sources and a Python implementation.
 
 ```bash
 python3 -m pytest formulas/test_refinery_calcs.py -v
@@ -44,6 +39,6 @@ Every constant carries a source comment. A change that breaks a test must explai
 Part of the **[Refinery Co](https://github.com/refinery-co)** brand family.
 
 - **[roots](https://github.com/refinery-co/roots)** — plants, growing protocols, collector guide
-- **row** — wine, mead (this repo)
+- **row** — wine and mead (this repo)
 
-Both grounded in Rodeo, California.
+Rodeo, CA · 38.0330°N 122.2677°W
